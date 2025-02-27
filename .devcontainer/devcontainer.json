@@ -1,7 +1,6 @@
 {
     "dockerComposeFile": "docker-compose.yaml",
     "service": "odoo",
-    "workspaceFolder": "/workspace/custom",
     "remoteUser": "root",
     "forwardPorts": [8069],
     "shutdownAction": "stopCompose",
