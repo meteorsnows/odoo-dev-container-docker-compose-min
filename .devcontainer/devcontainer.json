@@ -1,0 +1,23 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "odoo",
+    "workspaceFolder": "/workspace/custom",
+    "remoteUser": "root",
+    "forwardPorts": [8069],
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    }
+}
