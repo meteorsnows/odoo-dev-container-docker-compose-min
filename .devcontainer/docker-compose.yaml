@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+
+  odoo:
+    container_name: odoo
+    image: odoo:18.0
+    environment:
+      HOST: spirally-masculine-sloth.data-1.use1.tembo.io
+      USER: superodoouser
+      PASSWORD: superodoopassword
+    ports:
+      - 8069:8069
+    volumes:
+      - config:/etc/odoo
+      - extra-addons:/mnt/extra-addons
+      - data:/var/lib/odoo
+    restart: always
+volumes:
+  config:
+  extra-addons:
+  data:
